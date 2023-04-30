@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 512px;
+  background: whitesmoke;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    1px 4px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.friendsList {
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+.avatar {
+  display: flex;
+  width: 88px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5%;
+  margin-right: 30px;
+  background-color: blanchedalmond;
+}
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.status {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+   margin-right: 30px;
+  margin-left: 15px;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.ofline {
+  composes: status;
+  background-color: red;
+}
